@@ -1,0 +1,584 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    margin:0;
+    padding: 0;
+    scroll-behavior: smooth;
+    scroll-padding-top: 12rem;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+section{
+    padding: 50px 10%;
+}
+:root{
+    --main-color:#0e0e0e;
+    --text-color:#1c2844;
+    --prime-color:#fff;
+
+}
+img{
+    width: 100%;
+
+}
+body{
+    color:var(--prime-color)
+  
+}
+*::selection{
+    color: aliceblue;
+    background: var(--main-color) ;
+
+}
+html::-webkit-scrollbar{
+    width: 0.5rem;
+}
+html::-webkit-scrollbar-track{
+    background: transparent;
+}
+html::-webkit-scrollbar-thumb{
+    background: var(--main-color);
+    border-radius: 5rem;
+}
+/* Header */
+header{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    right: 0;
+    z-index: 100;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background:#0b0b0b ;
+    padding: 18px 10%;
+    color: #fff;
+    transition: 0.2s;
+}
+
+header .shadow{
+  box-shadow: 0 0 4px reb(14 55 54 / 15%);
+}
+.logo{
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--prime-color);
+}
+.navbar{
+    display: flex;
+}
+.navbar a{
+    font-size: 1rem;
+    padding:10px 20px;
+    color: var(--prime-color);
+    font-weight: 500;
+
+}
+.navbar a:hover{
+    background: var(--text-color);
+    color: #b9f756;
+}/*
+#menu-icon{
+    font-size: 24px;
+    cursor: pointer;
+    z-index: 10001;
+    display: none;
+}*/
+.home{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    background-color: rgb(63, 63, 62);
+    background-image: url(img.jpg);
+    display: grid;
+  
+    grid-template-columns: repeat(auto-fit,minmax(17rem,1fr));
+    align-items: center;
+    gap: 1.3rem;
+}   
+.home-text span{
+   
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+.home-text h1{
+    font-size: 3rem;
+    color: var(--prime-color);
+}
+.home-text h2{
+    font-size: 1.6rem;
+    font-weight: bolder;
+}
+.home-text p{
+    font-weight: 400;
+    margin: 0.7rem 0 1rem
+    
+}
+.home-img{
+  
+    padding: 40px;
+    
+}
+.home-img img{
+
+    border-radius: 90%;
+}
+
+.btn{                                                                           
+    display: inline-block;
+    background: var(--text-color);
+    padding: 0.8rem 2rem;
+    border-radius:110px;
+    color: #fff;
+    font-weight: 500;
+}
+.btn:hover{
+    background: var(--main-color);
+    letter-spacing: 2px;
+    transition: 0.2s;
+}
+/* About */                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            
+
+.about{
+    display: grid;
+    background-color: rgb(10, 10, 10);
+   
+    grid-template-columns: repeat(auto-fit,minmax(17rem, 1fr));
+    gap: 1.5rem;
+}
+.about-title{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.about-title h1{
+    color: var(--prime-color);
+    font-size: 1.7rem;
+}
+.about-title span,.heading span{
+    border-bottom: 0.2rem solid var(--main-color);
+}
+
+.about-title h2{
+    font-size: 1rem;
+    font-weight:500;
+}
+
+.about-img{
+    width: 200px;
+    height: 200px;
+    margin-top: 2rem;
+}
+.about-img img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: center;
+    background: var(--main-color);
+}
+.social{
+    display: flex;
+    align-items: center;
+      
+    margin-top: 1rem;
+}
+.social a .bx{
+    margin-right: 1rem;
+    font-size:  24px;
+    color: #ffff;
+    padding: 10px;
+    border-radius: 194px;
+    background: var(--text-color);
+}
+.social a .bx:hover{
+    color: #2ae7ee;
+ background: var(--main-color);
+}
+ .about-text p{
+    text-align: justify;
+    margin-bottom: 1rem;
+ }
+
+ /* Services */
+.skills-section{
+    background-color:rgb(164, 167, 166);
+    color: #fbf5f5;
+ }
+ .heading{
+    text-align: center;
+   
+ }
+ 
+ .skills-section {
+    max-width: 100%;
+    margin: 0 auto;
+    background-color:rgb(10, 10, 10);
+  }
+  
+  .skills-section h2 {
+    font-size: 2em;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .skill {
+    margin-bottom: 20px;
+  }
+  
+  .skill h3 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+  }
+  
+  .skill-bar {
+    width: 100%;
+    background-color: #e0e0e0;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  
+  .skill-level {
+    height: 30px;
+    line-height: 30px;
+    color: #fff;
+    text-align: center;
+    border-radius: 10px 0 0 10px;
+  }
+  
+  .skill-level.html {
+    width: 90%;
+    background-color: #f16529;
+  }
+  
+  .skill-level.css {
+    width: 80%;
+    background-color: #2965f1;
+  }
+  
+  .skill-level.js {
+    width: 45%;
+    background-color: #f0db4f;
+    color: #333;
+  }
+  
+  .skill-level.bootstrap {
+    font-size: large;
+    width: 70%;
+    background-color: #22c4f1;
+    color: #333;
+  }
+  
+  @media (max-width: 650px) {
+    .skill-level {
+      font-size: 0.8em;
+    }
+  }
+  /*.services-container .box{
+    text-align: center;
+    border: 2px solid var(--text-color);
+    padding: 20px;
+    border-radius: 0 2rem 0 0;
+    box-shadow: 10px 11px 11px rgb(14 55 54 / 15%);
+ }
+ .services-container .box .bx{
+    padding: 10px;
+    color: #fff;
+    font-size: 24px;
+    background:var(--text-color);
+    border-radius: 4px;
+ }
+
+ .services-container .box h2{
+    font-size: 1.1rem;
+    margin: 1rem 0 0.5rem;
+ }
+ .services-container .box:hover{
+    background: #4eb3d5;
+    color: #070707;
+    transition: 0.2s;
+ }
+ .services-container .box:hover .bx{
+    background: #fff;
+    color: var(--text-color);
+    transition: 0.2s;
+ }
+*/
+ /* Porfolio */
+  .portfolio{
+    background-color:rgb(10, 10, 10);
+  }
+ .portfolio-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(20rem,1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+ }      
+ .portfolio-container .box{
+    position: relative;
+    height: 220px;
+    box-shadow: 10px 11px 11px rgb(14 55 54 / 15%);
+    overflow: hidden;
+    border-radius: 0.5rem;
+ }
+ .portfolio-container .box .box-img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+ } 
+
+ .portfolio-container .box .content{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    top: -100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+     background: rgb(28, 40, 68,0.8);
+}
+.portfolio-container .box .content .bx{
+padding: 10px;
+font-size: 24px;
+border-radius: 4px;
+background: #fff;
+color: var(--text-color);
+}
+.portfolio-container .box .content h3{
+ color: #49cff4ec;
+ font-size: 1.7rem;
+ font-weight: 600;
+ margin:10px;
+}
+
+.portfolio-container .box:hover .content{
+    top: 0;
+    transition: 0.2s;
+}
+/* Contact */
+.Contact{
+    background-color: rgb(10, 10, 10);
+}
+.Contact-form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top:2rem;
+}
+.Contact-form form{
+    position: relative;
+    width: 370px;
+}
+.Contact-form .social{
+  
+justify-content: center;
+}
+form input,
+form textarea{
+    width: 100%;
+    padding: 14px;
+    border: none;
+    outline: none;
+    background:  rgb(28, 40, 68,0.8);
+    margin-bottom: 0.5rem;
+    border-radius: 4px;
+    color: #fff;
+}
+form input::placeholder,
+form textarea::placeholder{
+    color: #fff;
+}
+textarea{
+    resize: none;
+    height: 200px;
+
+}
+form .send-btn{
+    max-height: 110px;
+    font: 1rem;
+    font-weight: 500;
+    text-decoration: uppercase;
+}
+
+form .send-btn:hover{
+    background-color: var(--main-color);
+}
+
+/* copyright */
+
+.copyright{
+    padding: 20px; 
+    text-align: center;
+    color: #fff;
+    background: var(--text-color);
+}
+
+/* Mobile Styles*/
+.nav-toggle {
+    
+
+    font-size: 24px;
+    cursor: pointer;
+    z-index: 10001;
+    display: none;
+} 
+
+/*Making Responsive*/
+
+@media (max-width:991px) {
+    header{
+        padding: 18px 4%;
+    }
+    section{
+        padding:50px 4%;
+    }
+}
+
+@media (max-width:881px) {
+    .home-text span{
+        font-size: 1.1rem;
+    }
+    .home-img h1{
+        font-size: 3rem;
+    }
+    .home-text h2{
+        font-size: 1.2rem;
+    }
+    .home-text p{
+        font-size: 0.938rem;
+
+    } 
+}
+/*@media (max-width:881px){
+    header{
+        padding: 11px 4%;
+    }
+    #menu-icon{
+        display: initial;
+    }
+    header .navbar{
+        position:absolute;
+        top:-500px;
+        left:0;
+        right:0;
+        display:flex;
+        flex-direction: column;
+        background: #95e9ed;
+        box-shadow:0 4px 4px rgb(0, 0, 0,0.1);
+        transition: 0.2s ease;
+        text-align: left;
+    }
+    .navbar .active{
+        top:100%;
+    }
+    .navbar a{
+        padding:1rem;
+        border-left: 2px solid var(--main-color);
+        margin: 1rem;
+        display: block;
+    }
+    .navbar a:hover{
+        color: #fff;
+        background: var(--text-color);
+        border: none;
+    }
+}*/
+/* Responsive Design */
+@media  (max-width: 768px) {
+
+    header{
+        padding: 11px 4%;
+    }
+    .navbar {
+        display: none;
+        flex-direction: column;
+        background: #5ae4eb;
+        box-shadow:0 4px 4px rgba(246, 245, 245, 0.1);
+        transition: 0.2s ease;
+        width: 100%;
+    
+        background-color: #0e0d0d;
+        position:absolute;
+        top: 90%;
+        left:0;
+        right:0;
+        align-items: center ;
+    }
+    .navbar .active{
+        top:100%;
+    }
+    .navbar a{
+        padding:1rem;
+   
+        margin: 0.3rem;
+        display: block;
+    }
+    .navbar a:hover{
+        color: #61ef5f;
+        background: var(--prime-color);
+        border-radius:80%;
+        border: none;
+    }
+    .home{
+        margin-top: 7%;
+    }
+    .home-text span{
+        font-size: 1.2rem;
+        
+    }
+    .home-img h1{
+        font-size: 2.4rem;
+    }
+    .home-text h2{
+        font-size: 1.1rem;
+    }
+    .home-text p br{
+        font-size: 0.9rem;
+        display: contents;
+    }
+    .show-nav {
+        display: flex;
+    }
+
+    .nav-toggle{
+        display: block;
+    }
+
+}
+@media (max-width:618px) {
+    .home-img{
+    padding:10px;
+}
+}
+@media (max-width: 350px){
+    .home-img h1{
+        font-size: 2rem;
+    }
+    .home-text h2{
+        font-size: 1rem;
+    }
+    .btn{
+        padding: 0.6rem;
+
+    }
+    
+    .about-title h1{
+        font-size: 1.4rem;
+    }
+    .about-title h2{
+        font-size: 0.9rem ;
+    }
+    .heading h1{
+        font-size: 1.4rem;
+    }
+    p{
+        font-size: 0.938rem;
+    }
+}
